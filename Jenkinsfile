@@ -7,12 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Aishwaryadevraj-bnmit/lab12-maven.git'
-            }
-        }
-
         stage('Build & Test') {
             steps {
                 bat 'mvn clean test'
